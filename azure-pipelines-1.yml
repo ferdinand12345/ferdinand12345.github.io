@@ -8,6 +8,8 @@ trigger:
 
 pool:
   name: default
+  demands:
+    - Agent.Name -equals mag-on-dsta-new-vm
 
 steps:
 - script: echo Hello, world!
